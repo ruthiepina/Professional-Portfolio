@@ -1,0 +1,7 @@
+/** Universal selector to apply styling to all elements. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
