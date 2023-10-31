@@ -1,3 +1,8 @@
+:root{
+    --color1: azure;
+
+}
+
 /** Universal selector to apply styling to all elements. */
 * {
     box-sizing: border-box;
@@ -7,7 +12,7 @@
 
 /**Sets properties for the whole page.*/
 body {
-    background-color: azure;
+    background-color: var(--color1);
 }
 
 /**Styling for the HEADER*/
@@ -16,16 +21,18 @@ body {
     font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
     background-color: #2a607c;
     color:aliceblue;
+    display: flex;
+    /* justify-content: flex-end; */
 }
 
 /**Styling for h1 elements with a class="header"*/
 .header h1 {
     display: inline-block;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 /**Styling of span element*/
-.header h1 .Pina {
+.header h1 .pina {
     color: #d9dcd6;
 }
 
@@ -33,7 +40,6 @@ body {
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -65,14 +71,27 @@ a {
     display: inline-flex;
 }
 .content {
-    //*width: 75%;*/
+    padding: 10px;
+    width: auto;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content project-1 {
+    
 }
 
 .contact ul li {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 35px;
     list-style-type: none;
     
+}
+
+.other-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
