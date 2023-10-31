@@ -69,3 +69,10 @@ a {
     display: flex;
     flex-direction: row-reverse;
 }
+
+.contact ul li {
+    display: inline-block;
+    margin: 35px;
+    list-style-type: none;
+    
+}
