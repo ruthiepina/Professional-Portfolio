@@ -65,7 +65,7 @@ The following link is the GitHub live URL of this project:
 
 Screenshot of the final project:
 
-![Final-Project](./assets/images/portfolio-screenshot.png)
+![Final-Project](./assets/images/portfolio-screenshot.jpg)
 
 ## Credits
 
