@@ -20,6 +20,166 @@ body {
    color: var(--color3);
 }
 
+/** Header styling  */
+header {
+   background-color: var(--color1);
+   color: var(--color3);
+   /* height: 300px; */
+}
+
+header h1 {
+   font-size: 300%;
+   padding: 2.2rem;
+}
+
+.top-header {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.cont-navbar {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.cont-navbar li {
+   font-size: 150%;
+   list-style-type: none;
+   padding: 0 2rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:visited {
+   color: var(--color3);
+}
+
+a:hover {
+   background-color: var(--color2);
+}
+
+/** About Me*/
+h2 {
+   font-size: 200%;
+   font-weight: lighter;
+   text-align: center;
+   padding: 3%;
+}
+
+.cont-about-me {
+   display: flex;
+   flex-direction: column;
+}
+
+.cont-about-me img,
+.cont-about-me p {
+   padding: 1% 2%;
+   font-size: 120%;
+   font-weight: lighter;
+   text-align: center;
+}
+
+/** First project */
+.cont3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.cont-projects .app-1-cont {
+   background-image: url("/assets/images/studyguide.png");
+   height: 20rem;
+   background-size: cover;
+}
+
+.app-1-cont {
+   position: relative;
+}
+
+.app-1-cont .app-legend {
+   position: absolute;
+   bottom: 20%;
+   width: 25%;
+   text-align: center;
+   color: var(--color3);
+   background-color: var(--color1);
+}
+
+/**OTHER PROJECTS */
+.cont-other-projects {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-top: 1.5rem;
+}
+
+.cont-other-projects .app-2 {
+   background-image: url("/assets/images/project1.JPG");
+   height: 20rem;
+   background-size: cover;
+}
+.cont-other-projects .app-3 {
+   background-image: url("/assets/images/password.jpg");
+   height: 20rem;
+   background-size: cover;
+}
+.cont-other-projects .app-4 {
+   background-image: url("/assets/images/password.jpg");
+   height: 20rem;
+   background-size: cover;
+}
+
+.cont-other-projects {
+   position: relative;
+}
+
+.cont-other-projects .app-legend {
+   /* position: absolute; */
+   bottom: 20%;
+   text-align: center;
+   color: var(--color3);
+   background-color: var(--color1);
+   font-size: 2rem;
+   padding: 1%;
+}
+
+.app-legend {
+   background-color: var(--color1);
+   color: var(--color2);
+}
+
+/**Contact info*/
+.cont-contact-info {
+   font-size: 1rem;
+   text-align: center;
+   color: var(--color3);
+}
+
+.contact-label {
+   color: black;
+}
+
+.cont-contact-info a:visited {
+   color: var(--color3);
+}
+
+/**Footer*/
+footer {
+   height: 3rem;
+   background-color: var(--color1);
+   text-align: center;
+}
+
+footer p {
+   margin-top: 2rem;
+   height: 2rem;
+}
+
+/**Media Query*/
 @media screen and (max-width: 575px) {
    * {
       box-sizing: border-box;
@@ -60,125 +220,4 @@ body {
       font-size: 150%;
       list-style-type: none;
    }
-
-   a {
-      text-decoration: none;
-   }
-
-   a:visited {
-      color: var(--color3);
-   }
-
-   a:hover {
-      background-color: var(--color2);
-   }
-
-   /* About Me*/
-   h2 {
-      font-size: 200%;
-      font-weight: lighter;
-      text-align: center;
-      padding: 3%;
-   }
-
-   .cont-about-me {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .cont-about-me img,
-   .cont-about-me p {
-      padding: 1% 2%;
-      font-size: 120%;
-      font-weight: lighter;
-      text-align: center;
-   }
-
-   /* First project */
-   .cont3 {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .cont-projects .app-1-cont {
-      background-image: url("/assets/images/project1.JPG");
-      height: 20rem;
-      background-size: cover;
-   }
-
-   .app-1-cont {
-      position: relative;
-   }
-
-   .app-1-cont .app-legend {
-      position: absolute;
-      bottom: 20%;
-      width: 25%;
-      text-align: center;
-      color: var(--color3);
-      background-color: var(--color1);
-   }
-
-   .cont-other-projects {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding-top: 1.5rem;
-   }
-
-   .cont-other-projects .app-2,
-   .cont-other-projects .app-3,
-   .cont-other-projects .app-4 {
-      background-image: url("/assets/images/project1.JPG");
-      height: 20rem;
-      background-size: cover;
-   }
-
-   .cont-other-projects {
-      position: relative;
-   }
-
-   /* .app-legend .app-2,
-   .app-legend .app-3,
-   .app-legend .app-4 { */
-   .cont-other-projects .app-legend {
-      /* position: absolute; */
-      bottom: 20%;
-      /* width: %; */
-      text-align: center;
-      color: var(--color3);
-      background-color: var(--color1);
-      font-size: 2rem;
-      padding: 1%;
-   }
-}
-
-.app-legend {
-   background-color: var(--color1);
-   color: var(--color2);
-}
-.cont-contact-info {
-   font-size: 1rem;
-   text-align: center;
-   color: var(--color3);
-}
-
-.contact-label {
-   color: black;
-}
-
-.cont-contact-info a:visited {
-   color: var(--color3);
-}
-
-footer {
-   height: 3rem;
-   background-color: var(--color1);
-   text-align: center;
-}
-
-footer p {
-   margin-top: 2rem;
-   height: 2rem;
 }
