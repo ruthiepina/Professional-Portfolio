@@ -47,7 +47,7 @@ The motivation for this project was to be able to practice and implement what th
 
 - Began my work and structuring my html file in nonsemantic, had to go back and format to semantic html.
 
-- making my images meet accessibility standards by adding alt attributes.
+- making my avatar meet accessibility standards by adding alt attributes.
 
 - properly commented and consolidated css style selectors and properties.
 
