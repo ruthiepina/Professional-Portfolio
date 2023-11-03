@@ -1,4 +1,4 @@
-# Professional-Portfolio - rurilia margareta
+# Professional-Portfolio
 
 ## Description
 
