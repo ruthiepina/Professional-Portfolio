@@ -1,3 +1,4 @@
+/**General styling settings */
 :root {
    --color1: #8e7543;
    --color2: #2b6969;
@@ -19,6 +20,8 @@ body {
    font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
    color: var(--color3);
 }
+
+/**End of general styling settings*/
 
 /** Header styling  */
 header {
@@ -62,6 +65,8 @@ a:hover {
    background-color: var(--color2);
 }
 
+/**End of header*/
+
 /** About Me*/
 h2 {
    font-size: 200%;
@@ -82,6 +87,8 @@ h2 {
    font-weight: lighter;
    text-align: center;
 }
+
+/**End of About Me*/
 
 /** First project */
 .cont3 {
@@ -106,7 +113,10 @@ h2 {
    text-align: center;
    color: var(--color3);
    background-color: var(--color1);
+   font-size: 300%;
 }
+
+/**End of First Project*/
 
 /**OTHER PROJECTS */
 .cont-other-projects {
@@ -143,7 +153,7 @@ h2 {
    text-align: center;
    color: var(--color3);
    background-color: var(--color1);
-   font-size: 2rem;
+   font-size: 300%;
    padding: 1%;
 }
 
@@ -151,6 +161,8 @@ h2 {
    background-color: var(--color1);
    color: var(--color2);
 }
+
+/**End of Other Projects*/
 
 /**Contact info*/
 .cont-contact-info {
@@ -167,6 +179,8 @@ h2 {
    color: var(--color3);
 }
 
+/**End of Contact Info*/
+
 /**Footer*/
 footer {
    height: 3rem;
@@ -179,22 +193,13 @@ footer p {
    height: 2rem;
 }
 
-/**Media Query*/
+/**End of Footer*/
+
+/**Media Query for screens up to 575px*/
 @media screen and (max-width: 575px) {
-   * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-   }
-
-   html {
-      font-size: 16px;
-   }
-
+   /**General settings*/
    body {
-      font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
       max-width: 575px;
-      color: var(--color3);
    }
 
    /** Header styling  */
