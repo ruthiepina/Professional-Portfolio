@@ -47,7 +47,7 @@ The motivation for this project was to be able to practice and implement what th
 
 - Began my work and structuring my html file in nonsemantic, had to go back and format to semantic html.
 
-- making my avatar meet accessibility standards by adding alt attributes.
+- making my avatar meet accessibility standards by adding alt attributes. 
 
 - properly commented and consolidated css style selectors and properties.
 
@@ -55,6 +55,30 @@ The motivation for this project was to be able to practice and implement what th
 
 The following link is the GitHub live URL of this project: 
 
+[Profesional Portfolio](https://ruthiepina.github.io/Professional-Portfolio/). 
 
 Screenshot of the final project:
+
+![Final-Project](./assets/images/portfolio-screenshot.png)
+
+## Credits
+
+Following sources are where I searched for syntax information, different css style elements, troubleshooting code etc. 
+
+- https://github.com/orgs/community/discussions/35195
+- https://css-tricks.com/a-complete-guide-to-css-media-queries/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- https://www.w3schools.com/css/css3_mediaqueries.asp
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+- https://www.w3schools.com/css/css3_flexbox_container.asp
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-display
+- https://www.w3schools.com/css/css3_variables.asp
+- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide\
+
+## License
+
+MIT License
+
+---
 
