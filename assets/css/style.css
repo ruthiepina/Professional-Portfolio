@@ -98,7 +98,8 @@ h2 {
 }
 
 .cont-projects .app-1-cont {
-   background-image: url("/assets/images/studyguide.png");
+   /* background-image: url("/assets/images/studyguide.png"); */
+   background-image: url("../images/studyguide.png");
    height: 60rem;
    background-size: cover;
 }
@@ -129,17 +130,17 @@ h2 {
 }
 
 .cont-other-projects .app-2 {
-   background-image: url("/assets/images/project1.JPG");
+   background-image: url("../images/project1.JPG");
    height: 20rem;
    background-size: cover;
 }
 .cont-other-projects .app-3 {
-   background-image: url("/assets/images/password.jpg");
+   background-image: url("../images/password.jpg");
    height: 20rem;
    background-size: cover;
 }
 .cont-other-projects .app-4 {
-   background-image: url("/assets/images/password.jpg");
+   background-image: url("../images/password.jpg");
    height: 20rem;
    background-size: cover;
 }
