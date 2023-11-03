@@ -130,7 +130,7 @@ h2 {
 }
 
 .cont-other-projects .app-2 {
-   background-image: url("../images/project1.JPG");
+   background-image: url("/assets/images/project1.JPG");
    height: 20rem;
    background-size: cover;
 }
