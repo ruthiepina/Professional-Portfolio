@@ -1,57 +1,228 @@
-/** Universal selector to apply styling to all elements. */
+/**General styling settings */
+:root {
+   --color1: #8e7543;
+   --color2: #2b6969;
+   --color3: #fff;
+}
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 
-/**Sets properties for the whole page.*/
+html {
+   font-size: 16px;
+}
+
 body {
-    background-color: azure;
+   background-color: var(--color2);
+   font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+   color: var(--color3);
 }
 
-/**Styling for the HEADER*/
-.header {
-    padding: 20px;
-    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
-    background-color: #2a607c;
-    color:aliceblue;
+/**End of general styling settings*/
+
+/** Header styling  */
+header {
+   background-color: var(--color1);
+   color: var(--color3);
+   /* height: 300px; */
 }
 
-/**Styling for h1 elements with a class="header"*/
-.header h1 {
-    display: inline-block;
-    font-size: 40px;
+header h1 {
+   font-size: 300%;
+   padding: 2.2rem;
 }
 
-/**Styling of span element*/
-.header h1 .Pina {
-    color: #d9dcd6;
+.top-header {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
 }
 
-/**Styling of the nav bar*/
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.cont-navbar {
+   display: flex;
+   justify-content: space-evenly;
 }
 
-/**Styling for list of links*/
-.header nav ul {
-    list-style-type: none;
+.cont-navbar li {
+   font-size: 150%;
+   list-style-type: none;
+   padding: 0 2rem;
 }
 
-/**Styling of each link*/
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/**Styling for link text*/
 a {
-    color: #ffffff;
-    text-decoration-color: rgb(170, 161, 255);
+   text-decoration: none;
 }
 
+a:visited {
+   color: var(--color3);
+}
+
+a:hover {
+   background-color: var(--color2);
+}
+
+/**End of header*/
+
+/** About Me*/
+h2 {
+   font-size: 200%;
+   font-weight: lighter;
+   text-align: center;
+   padding: 3%;
+}
+
+.cont-about-me {
+   display: flex;
+   flex-direction: column;
+}
+
+.cont-about-me img,
+.cont-about-me p {
+   padding: 1% 2%;
+   font-size: 120%;
+   font-weight: lighter;
+   text-align: center;
+}
+
+/**End of About Me*/
+
+/** First project */
+.cont3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.cont-projects .app-1-cont {
+   background-image: url("/assets/images/studyguide.png");
+   height: 60rem;
+   background-size: cover;
+}
+
+.app-1-cont {
+   position: relative;
+}
+
+.app-1-cont .app-legend {
+   position: absolute;
+   bottom: 20%;
+   width: 25%;
+   text-align: center;
+   color: var(--color3);
+   background-color: var(--color1);
+   font-size: 300%;
+}
+
+/**End of First Project*/
+
+/**OTHER PROJECTS */
+.cont-other-projects {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-top: 1.5rem;
+}
+
+.cont-other-projects .app-2 {
+   background-image: url("/assets/images/project1.JPG");
+   height: 20rem;
+   background-size: cover;
+}
+.cont-other-projects .app-3 {
+   background-image: url("/assets/images/password.jpg");
+   height: 20rem;
+   background-size: cover;
+}
+.cont-other-projects .app-4 {
+   background-image: url("/assets/images/password.jpg");
+   height: 20rem;
+   background-size: cover;
+}
+
+.cont-other-projects {
+   position: relative;
+}
+
+.cont-other-projects .app-legend {
+   /* position: absolute; */
+   bottom: 20%;
+   text-align: center;
+   color: var(--color3);
+   background-color: var(--color1);
+   font-size: 300%;
+   padding: 1%;
+}
+
+.app-legend {
+   background-color: var(--color1);
+   color: var(--color2);
+}
+
+/**End of Other Projects*/
+
+/**Contact info*/
+.cont-contact-info {
+   font-size: 1rem;
+   text-align: center;
+   color: var(--color3);
+}
+
+.contact-label {
+   color: black;
+}
+
+.cont-contact-info a:visited {
+   color: var(--color3);
+}
+
+/**End of Contact Info*/
+
+/**Footer*/
+footer {
+   height: 3rem;
+   background-color: var(--color1);
+   text-align: center;
+}
+
+footer p {
+   margin-top: 2rem;
+   height: 2rem;
+}
+
+/**End of Footer*/
+
+/**Media Query for screens up to 575px*/
+@media screen and (max-width: 575px) {
+   /**General settings*/
+   body {
+      max-width: 575px;
+   }
+
+   /** Header styling  */
+   header {
+      background-color: var(--color1);
+      color: var(--color3);
+      /* height: 300px; */
+   }
+
+   header h1 {
+      font-size: 300%;
+      text-align: center;
+      padding: 2.2rem;
+   }
+
+   .cont-navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+
+   .cont-navbar li {
+      font-size: 150%;
+      list-style-type: none;
+   }
+}
